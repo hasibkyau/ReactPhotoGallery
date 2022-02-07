@@ -1,7 +1,8 @@
 import React from "react";
 import { CardText, Card, CardImg, CardImgOverlay, CardBody, CardTitle } from "reactstrap";
-
+import { Button } from "reactstrap";
 const DishDetail = (props) => {
+
     return(
         <div>
             <Card>
@@ -11,9 +12,12 @@ const DishDetail = (props) => {
                     <CardText>     
                         <p>{props.dish.description}</p>
                         <p>Price: {props.dish.price}</p>
+                        <p>{props.dish.comments[0].comment}</p>
                     </CardText>
                 </CardBody>
             </Card>
+            <Button onClick={()=>props.showComment(props.dish.comments)}>comments</Button>
+            
         </div>
     );
 }

@@ -2,18 +2,29 @@ import React, {Component} from "react";
 import DISHES from "../../data/dishes";
 import MenuItem from "./MenuItem";
 import DishDetail from "./DishDetail";
+import Comments from "./Comments";
 
 class Menu extends Component{
     state = {
         dishes: DISHES,
         selectedDish: null,
+        comments: null,
+        showComment: false,
     }
 
     onDishSelect = (dish) =>{
         this.setState({
             selectedDish: dish,
         });
-        console.log(dish);
+        //console.log(dish);
+    }
+
+    showComment = (comment) =>{
+        //console.log(comment);
+        this.setState({
+            comments: comment,
+            showComment: !this.state.showComment,
+        });
     }
 
     render(){
@@ -31,8 +42,22 @@ class Menu extends Component{
         })
         let dishDetail = null;
         if(this.state.selectedDish != null){
-            dishDetail = <DishDetail dish = {this.state.selectedDish}/>
+            dishDetail = <DishDetail dish = {this.state.selectedDish} showComment = {this.showComment}/>
         }
+
+        let comments = null;
+        if(this.state.comments != null && this.state.showComment == true){
+            comments = this.state.comments.map(data => {
+                return(
+                    <Comments comment = {data}/>
+                );
+            })
+        }
+        else{
+            comments = null;
+        }
+        
+
         return(
             <div className="container">
                 <div className="row">
@@ -41,6 +66,7 @@ class Menu extends Component{
                     </div>
                     <div className="col-6">
                         {dishDetail}
+                        {comments}
                     </div>
                 </div>
             </div>
