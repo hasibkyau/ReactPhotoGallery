@@ -30,14 +30,11 @@ class Menu extends Component{
     render(){
         const menu = this.state.dishes.map(item => {
             return(
-                <div>
                 <MenuItem 
                  dish = {item} 
                  key = {item.id}
                  onDishSelect = {this.onDishSelect}
                 />
-                </div>
-
             );
         })
         let dishDetail = null;
@@ -49,7 +46,8 @@ class Menu extends Component{
         if(this.state.comments != null && this.state.showComment == true){
             comments = this.state.comments.map(data => {
                 return(
-                    <Comments comment = {data}/>
+                    
+                    <Comments comment = {data} key = {data.id}/>
                 );
             })
         }

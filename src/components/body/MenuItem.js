@@ -18,8 +18,6 @@ const MenuItem = (props) =>{
                             {props.dish.name}
                         </CardTitle>
                     </CardImgOverlay>     
-                    {/* <p>Price: {props.dish.price}</p> 
-                    <p>{props.dish.description}</p>   */}
             </CardBody>
     
         </Card>

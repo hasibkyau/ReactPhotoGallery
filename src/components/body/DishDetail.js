@@ -9,11 +9,8 @@ const DishDetail = (props) => {
                 <CardImg top src={props.dish.image} alt={props.dish.name}/>
                 <CardBody style={{textAlign: "left"}}>
                     <CardTitle>{props.dish.name}</CardTitle>
-                    <CardText>     
-                        <p>{props.dish.description}</p>
-                        <p>Price: {props.dish.price}</p>
-                        <p>{props.dish.comments[0].comment}</p>
-                    </CardText>
+                    <CardText>{props.dish.description} </CardText>
+                    <CardText>Price: {props.dish.price} </CardText>
                 </CardBody>
             </Card>
             <Button onClick={()=>props.showComment(props.dish.comments)}>comments</Button>
