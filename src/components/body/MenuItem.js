@@ -1,14 +1,23 @@
 import React from "react";
+import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from "reactstrap";
 
 const MenuItem = (props) =>{
     console.log(props);
     return(
-        <div>
-            <h5>{props.dish.name}</h5>
-            <img className="container-fluid" src={props.dish.image}></img>
-            <p>Price: {props.dish.price}</p> 
-            <p>{props.dish.description}</p>      
-        </div>
+        <Card style={{margin: "10px"}}>
+            <CardBody>
+                <CardImg
+                 width="100%" alt={props.name} 
+                 style = {{opacity: "0.5"}}
+                 src={props.dish.image}></CardImg>
+                    <CardImgOverlay>
+                        <CardTitle>{props.dish.name}</CardTitle>
+                    </CardImgOverlay>     
+                    {/* <p>Price: {props.dish.price}</p> 
+                    <p>{props.dish.description}</p>   */}
+            </CardBody>
+    
+        </Card>
     );
 }
 
