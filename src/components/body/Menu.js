@@ -1,75 +1,66 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import DISHES from "../../data/dishes";
 import MenuItem from "./MenuItem";
 import DishDetail from "./DishDetail";
-import Comments from "./Comments";
+import { CardColumns, Modal, ModalBody, ModalFooter, Button } from "reactstrap";
 
-class Menu extends Component{
+class Menu extends Component {
     state = {
         dishes: DISHES,
         selectedDish: null,
         comments: null,
         showComment: false,
+        modalOpen: false,
     }
 
-    onDishSelect = (dish) =>{
+    onDishSelect = (dish) => {
         this.setState({
             selectedDish: dish,
+            modalOpen: !this.state.modalOpen
         });
-        //console.log(dish);
     }
 
-    showComment = (comment) =>{
-        //console.log(comment);
+    toggleModal = () =>{
         this.setState({
-            comments: comment,
-            showComment: !this.state.showComment,
-        });
+            modalOpen: !this.state.modalOpen
+        })
     }
 
-    render(){
+    render() {
         const menu = this.state.dishes.map(item => {
-            return(
-                <MenuItem 
-                 dish = {item} 
-                 key = {item.id}
-                 onDishSelect = {this.onDishSelect}
+            return (
+                <MenuItem
+                    dish={item}
+                    key={item.id}
+                    onDishSelect={this.onDishSelect}
                 />
             );
         })
         let dishDetail = null;
-        if(this.state.selectedDish != null){
-            dishDetail = <DishDetail dish = {this.state.selectedDish} showComment = {this.showComment}/>
+        if (this.state.selectedDish != null) {
+            dishDetail = <DishDetail dish={this.state.selectedDish} showComment={this.showComment} />
         }
 
-        let comments = null;
-        if(this.state.comments != null && this.state.showComment == true){
-            comments = this.state.comments.map(data => {
-                return(
-                    
-                    <Comments comment = {data} key = {data.id}/>
-                );
-            })
-        }
-        else{
-            comments = null;
-        }
-        
-
-        return(
+        return (
             <div className="container">
                 <div className="row">
-                    <div className="col-6">
+                    <CardColumns>
                         {menu}
-                    </div>
-                    <div className="col-6">
-                        {dishDetail}
-                        {comments}
-                    </div>
+                    </CardColumns>
+                    <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
+                        <ModalBody>
+                            {dishDetail}
+                        </ModalBody>
+                        <ModalFooter>
+                            <Button color="secondary" onClick={this.toggleModal}>
+                                Close
+                            </Button>
+                        </ModalFooter>
+                    </Modal>
                 </div>
             </div>
         );
     }
-} 
+}
 
 export default Menu;
