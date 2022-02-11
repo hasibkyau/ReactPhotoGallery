@@ -4,7 +4,6 @@ import dateFormat from "dateformat";
 import CommentForm from "./CommentForm";
 
 const DishDetail = (props) => {
-
     const comment = props.comments.map(data=>{
         return(
             <Card style={{textAlign: "left", padding:"20px", margin:"10px auto"}} key={data.id}>

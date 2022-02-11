@@ -25,5 +25,5 @@ const commentReducer = (commentState = COMMENTS, action) => {
 
 export const Reducer = combineReducers({
     dishes: dishReducer,
-    comments: commentReducer
+    comments: commentReducer,
 });
