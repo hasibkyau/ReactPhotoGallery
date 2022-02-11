@@ -3,7 +3,7 @@ import Menu from "./Menu";
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom"
 
 const Body = () =>{
     return(
