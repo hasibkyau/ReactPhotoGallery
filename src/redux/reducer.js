@@ -16,7 +16,7 @@ const commentReducer = (commentState = COMMENTS, action) => {
             let comment = action.payload;
             comment.id = commentState.length;
             comment.date = new Date().toDateString();
-            console.log("Reducer", comment);
+            //console.log("Reducer", comment);
             return commentState.concat(comment)
         default:
             return commentState;
@@ -25,5 +25,5 @@ const commentReducer = (commentState = COMMENTS, action) => {
 
 export const Reducer = combineReducers({
     dishes: dishReducer,
-    comments: commentReducer,
+    comments: commentReducer, 
 });
