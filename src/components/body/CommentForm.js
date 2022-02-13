@@ -1,14 +1,5 @@
-import React, { Component } from "react";
-import { Form, Button, Input } from "reactstrap";
-import { connect } from "react-redux";
-import { addComment } from "../../redux/actionCreator";
-
-const mapDispatchToProps = dispatch =>{
-    return{
-        addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
-        deleteComment: ()=> dispatch({})
-    }
-}
+import React, { Component } from 'react';
+import { Form, Button, Input } from 'reactstrap';
 
 class CommentForm extends Component {
     constructor(props) {
@@ -16,33 +7,33 @@ class CommentForm extends Component {
         this.state = {
             author: '',
             rating: '',
-            comment: '',
+            comment: ''
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-
     }
 
-    handleInputChange = event =>{
+    handleInputChange = event => {
         this.setState({
-            [event.target.name]: event.target.value,
+            [event.target.name]: event.target.value
         })
     }
 
-    handleSubmit = event =>{      
+    handleSubmit = event => {
+        console.log("submit", this.props);
         this.props.addComment(this.props.dishId, this.state.rating, this.state.author, this.state.comment);
-        //console.log(this.props);
+
         this.setState({
             author: '',
             rating: '',
-            comment: '',
-        })
-      
+            comment: ''
+        });
+
         event.preventDefault();
     }
 
     render() {
-        // console.log(this.props);
+        //console.log(this.props);
         return (
             <div>
                 <Form onSubmit={this.handleSubmit}>
@@ -51,16 +42,14 @@ class CommentForm extends Component {
                         name="author"
                         value={this.state.author}
                         placeholder="Your Name"
-                        required
-                        onChange = {this.handleInputChange}
-                    />
+                        onChange={this.handleInputChange}
+                        required />
                     <br />
                     <Input
                         type="select"
                         name="rating"
                         value={this.state.rating}
-                        onChange = {this.handleInputChange}
-                    >
+                        onChange={this.handleInputChange} >
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -73,17 +62,15 @@ class CommentForm extends Component {
                         name="comment"
                         value={this.state.comment}
                         placeholder="Your Comment"
-                        required
-                        onChange = {this.handleInputChange}
-                        >
+                        onChange={this.handleInputChange}
+                        required>
                     </Input>
                     <br />
-                    <Button
-                        type="submit">Submit Form</Button>
+                    <Button type="submit">Submit Comment</Button>
                 </Form>
             </div>
-        )
+        );
     }
 }
 
-export default connect(null, mapDispatchToProps)(CommentForm);
+export default CommentForm;
