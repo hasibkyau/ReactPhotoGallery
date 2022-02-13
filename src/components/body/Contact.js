@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { Button, FormGroup, Label, Col } from "reactstrap";
-import {Form, Control, Errors} from "react-redux-form";
+import { Form, Control, Errors } from "react-redux-form";
 import { actions } from "react-redux-form";
 import { connect } from "react-redux";
+import axios from "axios";
+import { baseUrl } from "../../redux/baseUrl";
+import { Alert } from "reactstrap";
 
-const mapDispatchToProps = dispatch =>{
-    return{
-        resetFeedbackForm: () =>{
+const mapDispatchToProps = dispatch => {
+    return {
+        resetFeedbackForm: () => {
             dispatch(actions.reset('feedback'))
         }
     }
@@ -17,8 +20,36 @@ const isNumber = val => !isNaN(Number(val));
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 class Contact extends Component {
+    state = {
+        alertShow: false,
+        alertText: null,
+        alertType: null
+    }
     handleSubmit = values => {
-        console.log("Handle Submit: ", values);
+        //console.log("Handle Submit: ", values);
+        axios.post(baseUrl + "feedback", values)
+            .then(response => response.status)
+            .then(status => {
+                if (status === 201) {
+                    this.setState({
+                        alertShow: true,
+                        alertText: "Submitted Successfully",
+                        alertType: "success"
+                    })
+                    setTimeout(() => {
+                        this.setState({
+                            alertShow: false,
+                        })
+                    }, 2000)
+                }
+                else {
+                    this.setState({
+                        alertShow: true,
+                        alertText: "Submition failed",
+                        alertType: "danger"
+                    })
+                }
+            })
         this.props.resetFeedbackForm();
     }
 
@@ -26,13 +57,18 @@ class Contact extends Component {
         document.title = "Contact";
         return (
             <div className="container">
+
                 <div className="row row-content" style={{ paddingLeft: "20px", textAlign: "left" }}>
                     <div className="col-12">
                         <h3>Send us your Feedback</h3>
                     </div>
 
                     <div className="col-12 col-md-7">
-                        <Form model="feedback" onSubmit={values=>this.handleSubmit(values)}>
+                        <Alert isOpen={this.state.alertShow} color={this.state.alertType}>
+                            {this.state.alertText}
+                        </Alert>
+
+                        <Form model="feedback" onSubmit={values => this.handleSubmit(values)}>
                             <FormGroup row>
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={8}>
@@ -41,12 +77,12 @@ class Contact extends Component {
                                         name="firstName"
                                         placeholder="First Name"
                                         className="form-control"
-                                        validators={{required}}
+                                        validators={{ required }}
                                     />
                                     <Errors className="text-danger"
-                                    model=".firstname"
-                                    show="touched"
-                                    messages={{required: "Required*"}}
+                                        model=".firstname"
+                                        show="touched"
+                                        messages={{ required: "Required*" }}
                                     />
                                 </Col>
                             </FormGroup>
@@ -59,13 +95,13 @@ class Contact extends Component {
                                         name="lastName"
                                         placeholder="Last Name"
                                         className="form-control"
-                                        validators={{required}}
-                                    
+                                        validators={{ required }}
+
                                     />
                                     <Errors className="text-danger"
-                                    model=".lastname"
-                                    show="touched"
-                                    messages={{required: "Required*"}}
+                                        model=".lastname"
+                                        show="touched"
+                                        messages={{ required: "Required*" }}
                                     />
                                 </Col>
                             </FormGroup>
@@ -78,14 +114,16 @@ class Contact extends Component {
                                         name="telnum"
                                         placeholder="Tel. Number"
                                         className="form-control"
-                                        validators={{required, isNumber}}
-                                        
+                                        validators={{ required, isNumber }}
+
                                     />
                                     <Errors className="text-danger"
-                                    model=".telnum"
-                                    show="touched"
-                                    messages={{required: "Required*",
-                                    isNumber:"Invalid number"}}
+                                        model=".telnum"
+                                        show="touched"
+                                        messages={{
+                                            required: "Required*",
+                                            isNumber: "Invalid number"
+                                        }}
                                     />
                                 </Col>
                             </FormGroup>
@@ -98,14 +136,16 @@ class Contact extends Component {
                                         name="email"
                                         placeholder="Email"
                                         className="form-control"
-                                        validators={{required, validEmail}}
-                                        
+                                        validators={{ required, validEmail }}
+
                                     />
                                     <Errors className="text-danger"
-                                    model=".email"
-                                    show="touched"
-                                    messages={{required: "Required*",
-                                validEmail:"Invalid Email"}}
+                                        model=".email"
+                                        show="touched"
+                                        messages={{
+                                            required: "Required*",
+                                            validEmail: "Invalid Email"
+                                        }}
                                     />
                                 </Col>
                             </FormGroup>
@@ -143,12 +183,12 @@ class Contact extends Component {
                                         name="message"
                                         rows="12"
                                         className="form-control"
-                                        validators={{required}}
+                                        validators={{ required }}
                                     />
                                     <Errors className="text-danger"
-                                    model=".message"
-                                    show="touched"
-                                    messages={{required: "Required*"}}
+                                        model=".message"
+                                        show="touched"
+                                        messages={{ required: "Required*" }}
                                     />
                                 </Col>
                             </FormGroup>
