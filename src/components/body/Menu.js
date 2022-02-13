@@ -5,6 +5,7 @@ import { CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addComment, fetchDishes, fetchComments} from '../../redux/actionCreator';
 import Loading from './Loading';
+import { Alert } from 'reactstrap';
 
 const mapStateToProps = state => {
     return {
@@ -47,12 +48,19 @@ class Menu extends Component {
 
     render() {
         document.title = "Menu";
-
+        console.log("err",this.props);
         if (this.props.dishes.isLoading) {
             return (
-                <Loading />
+                <Loading/>
             );
         }
+
+        else if (this.props.dishes.errMess != null) {
+            return (
+                <Alert color='danger'>Error Loading</Alert>
+            );
+        }
+        
         else {
             const menu = this.props.dishes.dishes.map(item => {
                 return (

@@ -50,6 +50,20 @@ class Contact extends Component {
                     })
                 }
             })
+            .catch(error => {
+                this.setState({
+                    alertShow: true,
+                    alertType: "danger",
+                    alertText: error.message
+                })
+
+                setTimeout(() => {
+                    this.setState({
+                        alertShow: false
+                    })
+                },2000)
+            })
+
         this.props.resetFeedbackForm();
     }
 
