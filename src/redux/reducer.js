@@ -2,8 +2,6 @@ import { combineReducers } from 'redux';
 import * as actionTypes from './actionTypes';
 import { createForms } from 'react-redux-form';
 import { InitialContactForm } from './form';
-import axios from 'axios';
-import { baseUrl } from './baseUrl';
 
 const dishReducer = (dishState = {isLoading:false, dishes:[]}, action) => {
     switch(action.type){
@@ -42,12 +40,10 @@ const commentReducer = (commentState = {isLoading: true, comments: []}, action) 
 
         case actionTypes.ADD_COMMENT:
             let comment = action.payload;
-            comment.id = commentState.length;
-            comment.date = new Date().toDateString();
-            console.log("Reducer", comment);
-            axios.post(baseUrl+"comments", comment)
-            .then(response => console.log("done"))
-            //return comment
+            return {
+                ...commentState,
+                comments: commentState.comments.concat(comment)
+            }
         default:
             return commentState;
     }  

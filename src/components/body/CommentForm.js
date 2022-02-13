@@ -22,7 +22,7 @@ class CommentForm extends Component {
     }
 
     handleSubmit = event => {
-        console.log("submit", this.props);
+        //console.log("submit", this.props);
         this.props.addComment(this.props.dishId, this.state.rating, this.state.author, this.state.comment);
         
         this.setState({
