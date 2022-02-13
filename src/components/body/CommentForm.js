@@ -1,5 +1,7 @@
+import axios from 'axios';
 import React, { Component } from 'react';
 import { Form, Button, Input } from 'reactstrap';
+import { baseUrl } from '../../redux/baseUrl';
 
 class CommentForm extends Component {
     constructor(props) {
@@ -22,7 +24,7 @@ class CommentForm extends Component {
     handleSubmit = event => {
         console.log("submit", this.props);
         this.props.addComment(this.props.dishId, this.state.rating, this.state.author, this.state.comment);
-
+        
         this.setState({
             author: '',
             rating: '',
