@@ -85,9 +85,9 @@ class Menu extends Component {
             return (
                 <div className="container">
                     <div className="row">
-                        <CardColumns>
+                        <div className='row justify-content-md-center"'>
                             {menu}
-                        </CardColumns>
+                        </div>
                         <Modal isOpen={this.state.modalOpen}>
                             <ModalBody>
                                 {dishDetail}

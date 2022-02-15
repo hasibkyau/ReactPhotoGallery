@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import {Nav, NavItem, NavbarToggler, Collapse ,Navbar, NavbarBrand } from "reactstrap";
+import LOGO from "./LOGO";
 
 class Navigation extends Component{
     
@@ -20,14 +21,21 @@ class Navigation extends Component{
     render(){
     return(
         <div>
-            <Navbar dark color="dark" expand="sm"> 
+            <Navbar light color="light" expand="sm"> 
                 <div className="container">
                 <NavbarToggler onClick={this.navToggle} />
-                <NavbarBrand href="/">Restaurant App</NavbarBrand>                      
+                <NavbarBrand href="/">
+
+                    <Link to="/" className="nav-link" style={{padding:"0px"}}>
+                        <LOGO/>
+                    </Link>
+                    
+                </NavbarBrand> 
+
                 <Collapse isOpen = {this.state.isNavOpen} navbar>
                 <Nav className="mr-auto" navbar>
                     <NavItem>
-                        <Link to="/" className="nav-link active">Home</Link>
+                        <Link to="/" className="nav-link">Home</Link>
                     </NavItem>
                     <NavItem>
                         <Link to="/menu" className="nav-link">Menu</Link>
