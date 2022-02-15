@@ -29,6 +29,7 @@ class BannerSection extends Component {
                                 <h2 style={{ color: "white"}}>It's the food and groceries you love, delivered. List your restaurant or shop on foodpanda</h2>
                                 {/* <Button color="danger" size="sm">Sign Up for Free</Button> */}
                                 <button type="button" class="btn btn-danger btn-lg">Sign Up for Free</button>
+                                
 
                             </div>
                         </div>
