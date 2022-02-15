@@ -15,9 +15,6 @@ const MenuSection = () =>{
                 </div>
                                 
             </div>
-            <h1>see more</h1>
-            <h1>see more</h1>
-           
             </div>
 
         );  

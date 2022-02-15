@@ -25,7 +25,8 @@ class HomePage extends Component {
                 />
 
                 <MenuSection/>
-            </div>
+
+               </div>
 
         );
     }
