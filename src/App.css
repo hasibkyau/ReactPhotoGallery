@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.footer{
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  min-height: 400px;
+}

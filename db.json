@@ -1,0 +1,324 @@
+{
+  "dishes": [
+    {
+      "id": 0,
+      "name": "Ginger Burger",
+      "image": "images/0burger.jpg",
+      "category": "meal",
+      "label": "Hot",
+      "price": "199",
+      "featured": true,
+      "description": "This chicken burger gets an Asian-flavor twist with ginger and garlic. It's topped off with a fabulous coleslaw. If you like, serve the coleslaw as a side for grilled items, like chicken breasts, fish fillets or chops"
+    },
+    {
+      "id": 1,
+      "name": "BBQ Chicken Pizza",
+      "image": "images/1pizza.jpg",
+      "category": "meal",
+      "label": "",
+      "price": "9",
+      "featured": false,
+      "description": "BBQ chicken pizza with tangy BBQ sauce, chicken, and red onion. Gouda cheese gives the homemade pizza the most delicious smoky flavor and cilantro adds a touch of freshness. My pizza dough recipe makes enough for two 12-inch pizzas, so you can freeze half for later. Its an easy thick-style pizza crust with unbeatable flavor."
+    },
+    {
+      "id": 2,
+      "name": "French Fries",
+      "image": "images/2fries.jpg",
+      "category": "appetizer",
+      "label": "New",
+      "price": "120",
+      "featured": false,
+      "description": "These are deep-fried, very thin, salted slices of potato that are usually served at room temperature. French fries have numerous variants, from thick-cut to shoestring, crinkle, curly and many other names."
+    },
+    {
+      "id": 3,
+      "name": "Cheese Cake",
+      "image": "images/3cake.jpg",
+      "category": "dessert",
+      "label": "",
+      "price": "170",
+      "featured": false,
+      "description": "A delectable, semi-sweet New York Style Cheese Cake, with cracker crust and spiced with Indian cardamoms"
+    }
+  ],
+  "comments": [
+    {
+      "dishId": 0,
+      "id": 0,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "Shanto",
+      "date": "2018-10-16T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "id": 1,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Karim",
+      "date": "2017-09-05T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "id": 2,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Moinul",
+      "date": "2019-02-13T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "id": 3,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Rahat",
+      "date": "2017-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 0,
+      "id": 4,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "Rony",
+      "date": "2019-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "id": 5,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "Shanto",
+      "date": "2018-10-16T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "id": 6,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Karim",
+      "date": "2017-09-05T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "id": 7,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Moinul",
+      "date": "2019-02-13T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "id": 8,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Rahat",
+      "date": "2017-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "id": 9,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "Rony",
+      "date": "2019-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 2,
+      "id": 10,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "Shanto",
+      "date": "2018-10-16T17:57:28.556094Z"
+    },
+    {
+      "dishId": 2,
+      "id": 11,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Karim",
+      "date": "2017-09-05T17:57:28.556094Z"
+    },
+    {
+      "dishId": 2,
+      "id": 12,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Moinul",
+      "date": "2019-02-13T17:57:28.556094Z"
+    },
+    {
+      "dishId": 2,
+      "id": 13,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Rahat",
+      "date": "2017-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 2,
+      "id": 14,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "Rony",
+      "date": "2019-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 3,
+      "id": 15,
+      "rating": 5,
+      "comment": "Imagine all the eatables, living in conFusion!",
+      "author": "Shanto",
+      "date": "2018-10-16T17:57:28.556094Z"
+    },
+    {
+      "dishId": 3,
+      "id": 16,
+      "rating": 4,
+      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "author": "Karim",
+      "date": "2017-09-05T17:57:28.556094Z"
+    },
+    {
+      "dishId": 3,
+      "id": 17,
+      "rating": 3,
+      "comment": "Eat it, just eat it!",
+      "author": "Moinul",
+      "date": "2019-02-13T17:57:28.556094Z"
+    },
+    {
+      "dishId": 3,
+      "id": 18,
+      "rating": 4,
+      "comment": "Ultimate, Reaching for the stars!",
+      "author": "Rahat",
+      "date": "2017-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 3,
+      "id": 19,
+      "rating": 2,
+      "comment": "It's your birthday, we're gonna party!",
+      "author": "Rony",
+      "date": "2019-12-02T17:57:28.556094Z"
+    },
+    {
+      "dishId": 1,
+      "author": "Hasib",
+      "rating": "5",
+      "comment": "Working\n",
+      "date": "2022-02-13T13:21:05.153Z",
+      "id": 20
+    },
+    {
+      "dishId": 0,
+      "author": "Hasib",
+      "rating": "3",
+      "comment": "sasassa",
+      "date": "2022-02-13T15:33:40.796Z",
+      "id": 21
+    },
+    {
+      "dishId": 2,
+      "author": "Siam Ahmed",
+      "rating": "",
+      "comment": "Vhua khabar. Akdom baje. Mama janle ban kore dibo ei product. ",
+      "date": "2022-02-14T15:07:40.425Z",
+      "id": 22
+    },
+    {
+      "dishId": 0,
+      "author": "Tasnim ",
+      "rating": "",
+      "comment": "I love you Hasib",
+      "date": "2022-02-14T19:44:02.499Z",
+      "id": 23
+    },
+    {
+      "dishId": 0,
+      "author": "Hasib ",
+      "rating": "",
+      "comment": "I love you too\n",
+      "date": "2022-02-14T19:44:36.539Z",
+      "id": 24
+    }
+  ],
+  "feedback": [
+    {
+      "firstName": "Kenny",
+      "lastName": "West",
+      "telNum": "+8801988609090",
+      "email": "kenny_west@gmail.com",
+      "agree": true,
+      "contactType": "Email",
+      "message": "Satisfied with the restaurant",
+      "id": 2
+    },
+    {
+      "firstname": "Hasibur",
+      "lastname": "Rahman",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "Your Resturant is awesome",
+      "id": 3
+    },
+    {
+      "firstname": "Monirul",
+      "lastname": "Islam",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "Beautifull",
+      "id": 4
+    },
+    {
+      "firstname": "Maruf",
+      "lastname": "Ahmed",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "Perfect",
+      "id": 5
+    },
+    {
+      "firstname": "Rakib",
+      "lastname": "Hasan",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "Perfect",
+      "id": 6
+    },
+    {
+      "firstname": "Maruf",
+      "lastname": "Rahman",
+      "telnum": "01758975747",
+      "email": "tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "nice",
+      "id": 7
+    },
+    {
+      "firstname": "Naim ",
+      "lastname": "Ahmed",
+      "telnum": "01758975747",
+      "email": "hasibtt@yahoo.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "fasfd",
+      "id": 8
+    }
+  ]
+}
