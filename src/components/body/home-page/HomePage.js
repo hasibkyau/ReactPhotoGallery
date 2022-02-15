@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import BannerSection from "./BannerSection";
 import AdvertiseSection from "./AdvertiseSection";
+import MenuSection from "./MenuSection";
+
 class HomePage extends Component {
     render() {
         document.title = "Home";
@@ -21,6 +23,8 @@ class HomePage extends Component {
                     AdvertiseDetails = "Would you like millions of new customers to enjoy your amazing food and groceries? So would we! It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry ninjas – in a heartbeat! Interested? Let's start our partnership today!" 
                     button = {{text:"Get Started"}}
                 />
+
+                <MenuSection/>
             </div>
 
         );
