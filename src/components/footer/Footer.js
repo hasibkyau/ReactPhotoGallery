@@ -1,9 +1,10 @@
 import React from "react";
-import FooterSection from "./FooterSection";
+
 const Footer = () =>{
     return(
-        <div className>
-            <FooterSection/>
+        <div className="footer">
+            <p className = "text-center text-muted">&copy; 2021 Ninja IT Corporation, Inc</p>
+  
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import './css/banner.css'
+import './banner.css'
 
-const BannerSection = (props) => {
+const BANNER = (props) => {
     return (
         <div>
             <div className="banner" style={{backgroundImage:props.bgImg}}>
@@ -16,7 +16,7 @@ const BannerSection = (props) => {
                             <h5 style={{ color: "white" }}>{props.subtitle}</h5>
 
                             {/* <Button color="danger" size="sm">Sign Up for Free</Button> */}
-                            <button type="button" className="btn btn-danger" style = {{ backgroundColor: props.button.backgroundColor, width: props.button.size}}>Sign Up for Free</button>
+                            <button type="button" class= "btn btn-danger" style = {{ backgroundColor: props.button.backgroundColor, width: props.button.size}}>Sign Up for Free</button>
                         </div>
                     </div>
                 </div>
@@ -26,4 +26,4 @@ const BannerSection = (props) => {
 
 }
 
-export default BannerSection;
+export default BANNER;
