@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BannerSection from "./components/BannerSection";
 import AdvertiseSection from "./components/AdvertiseSection";
 import MenuSection from "./components/MenuSection";
-import FooterSection from "./components/FooterSection copy";
+import FooterBody from "./components/FooterBody";
 import FooterBanner from "./components/FooterBanner";
 import FooterContact from "./components/FooterContact";
 
@@ -17,7 +17,7 @@ class Home extends Component {
                     subtitle="It's the food and groceries you love, delivered. List your restuarnt or shop on foodninja"
                     align="left"
                     button={{ text: "Sign up for free", backgroundColor: "", size: "" }}
-                    bgImg="url('assets/images/bg1.jpg')"
+                    bgImg="assets/images/bg1.jpg"
                 />
 
                 <AdvertiseSection
@@ -36,7 +36,7 @@ class Home extends Component {
                     copyRightText="2022 Ninja IT Corporation, Inc"
                     bgImg="assets/images/bg3.jpg"
                 />
-                <FooterSection />
+                <FooterBody/>
                 <FooterContact />
 
             </div>

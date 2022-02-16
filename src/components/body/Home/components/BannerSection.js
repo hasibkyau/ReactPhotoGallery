@@ -4,7 +4,7 @@ import '../css/banner.css'
 const BannerSection = (props) => {
     return (
         <div>
-            <div className="banner" style={{backgroundImage:props.bgImg}}>
+            <div className="banner" style={{backgroundImage: "linear-gradient(to right, rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.2)),url("+props.bgImg+")"}}>
                 <div className="container">
                     <div className="row" id="hello">
                         <div className="banner-text">

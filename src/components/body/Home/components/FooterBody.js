@@ -2,7 +2,8 @@ import React from "react";
 import { CardText } from "reactstrap";
 import '../css/banner.css'
 import '../css/footer.css'
-const FooterSection = () => {
+
+const FooterBody = () => {
     return (
         <div style={{}}>
             <div className = "container" style={{ textAlign: "left", color: "red", }}>
@@ -46,4 +47,4 @@ const FooterSection = () => {
     );
 }
 
-export default FooterSection;
+export default FooterBody;
