@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import BannerSection from "./BannerSection";
-import AdvertiseSection from "./AdvertiseSection";
-import MenuSection from "./MenuSection";
-import BottomSection from "./BottomSection";
+import BannerSection from "./components/BannerSection";
+import AdvertiseSection from "./components/AdvertiseSection";
+import MenuSection from "./components/MenuSection";
+import FooterSection from "./components/FooterSection copy";
+import FooterBanner from "./components/FooterBanner";
+import FooterContact from "./components/FooterContact";
 
-class HomePage extends Component {
+class Home extends Component {
     render() {
         document.title = "Home";
         return (
@@ -22,13 +24,20 @@ class HomePage extends Component {
                     AdvertiseTitle='List your restaurant or shop on foodninja'
                     AdvertiseDetails="Would you like millions of new customers to enjoy your amazing food and groceries? So would we! It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry ninjas – in a heartbeat! Interested? Let's start our partnership today!"
                     button={{ text: "Get Started" }}
-                    bgImg="url('assets/images/logos/foodninja-01.png')"
+                    bgImg='assets/images/logos/foodninja-01.png'
 
                 />
 
                 <MenuSection />
 
-                <BottomSection />
+                <FooterBanner
+                    title="Thank you for visiting our site"
+                    subtitle="This project has deploped by Md Hasibur Rahman"
+                    copyRightText="2022 Ninja IT Corporation, Inc"
+                    bgImg="assets/images/bg3.jpg"
+                />
+                <FooterSection />
+                <FooterContact />
 
             </div>
 
@@ -36,4 +45,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default Home;

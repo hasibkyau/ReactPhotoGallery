@@ -1,9 +1,9 @@
 import React from "react";
-import Menu from "./Menu";
-import Home from "./Home";
 import Contact from "./Contact";
-import About from "./About";
+import About from "./about/About";
 import { Route, Routes } from "react-router-dom"
+import Home from "./Home/Home";
+import Menu from "./Menu";
 
 const Body = () =>{
     return(

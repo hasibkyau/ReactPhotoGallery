@@ -1,7 +1,7 @@
 import React from "react";
 import { CardText } from "reactstrap";
-import './footer.css'
-import '../body/home-page/css/banner.css';
+import '../css/footer.css'
+import '../css/banner.css'
 
 const FooterContact = (props) => {
     return (
