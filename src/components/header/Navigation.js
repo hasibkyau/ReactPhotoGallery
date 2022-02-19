@@ -21,7 +21,7 @@ class Navigation extends Component {
     render() {
         return (
             <div>
-                <Navbar light color="light" expand="sm">
+                <Navbar fixed="top" light color="light" expand="sm">
                     <div className="container">
                         <NavbarToggler onClick={this.navToggle} />
                         <NavbarBrand href="/">
@@ -41,6 +41,12 @@ class Navigation extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <Link to="/contact" className="nav-link">Contact</Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link to="/portfolio" className="nav-link">Portfolio</Link>
+                                </NavItem>
+                                <NavItem>
+                                    <Link to="/ninjatailor" className="nav-link">ninjaTailor</Link>
                                 </NavItem>
                             </Nav>
                         </Collapse>

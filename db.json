@@ -241,6 +241,30 @@
       "comment": "I love you too\n",
       "date": "2022-02-14T19:44:36.539Z",
       "id": 24
+    },
+    {
+      "dishId": 1,
+      "author": "Rifat",
+      "rating": "2",
+      "comment": "nice",
+      "date": "2022-02-17T05:24:13.822Z",
+      "id": 25
+    },
+    {
+      "dishId": 3,
+      "author": "Rifat",
+      "rating": "",
+      "comment": "Balo",
+      "date": "2022-02-17T05:24:28.881Z",
+      "id": 26
+    },
+    {
+      "dishId": 0,
+      "author": "Mokabber",
+      "rating": "",
+      "comment": "this food is good",
+      "date": "2022-02-19T09:05:32.269Z",
+      "id": 27
     }
   ],
   "feedback": [
