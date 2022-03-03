@@ -31,17 +31,19 @@ class Navigation extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="mr-auto" navbar>
                                 <NavItem>
-                                    <Link to="/" className="nav-link" onClick={this.navToggle}>Home</Link>
+                                    <Link to="/" className="nav-link">Home</Link>
                                 </NavItem>
-                                
+                                <NavItem>
+                                    <Link to="/contact" className="nav-link">Contact</Link>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
                 </Navbar>
-                
-                <br/>
-                <br/>
-                <br/>
+
+                <br />
+                <br />
+                <br />
             </div>
         )
     }
