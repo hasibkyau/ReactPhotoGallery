@@ -3,10 +3,12 @@
 
 # *.png
 # *.jpg
+# *.jpeg
+# *.webp
 
 # dependencies
+/public/images
 /node_modules
-/public
 /.pnp
 .pnp.js
 
