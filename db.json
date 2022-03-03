@@ -1,12 +1,12 @@
 {
   "photos": [
     {
-      "id": 0,    
+      "id": 0,
       "name": "Bee 02",
       "image": "images/bee02.jpg",
       "category": "Insect",
       "featured": false,
-      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "      
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     },
     {
       "id": 1,
@@ -24,7 +24,7 @@
       "category": "Animal",
       "featured": true,
       "description": "This is a huge wild bear typycally found in jungle"
-      },
+    },
     {
       "id": 3,
       "name": "Bee 03",
@@ -51,7 +51,6 @@
     },
     {
       "id": 6,
-      
       "name": "Spider 02",
       "image": "images/spider02.jpg",
       "category": "Insect",
@@ -77,7 +76,7 @@
     {
       "id": 9,
       "name": "Bird 06",
-      "image": "images/bird06.jpg",
+      "image": "images/bird06.jpeg",
       "category": "Bird",
       "featured": false,
       "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
@@ -107,12 +106,11 @@
       "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     },
     {
-      "id": 13,   
+      "id": 13,
       "name": "Bird 05",
       "image": "images/bird05.jpg",
       "category": "Bird",
       "featured": false,
-      
       "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     },
     {
@@ -140,7 +138,7 @@
       "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     },
     {
-      "id": 17, 
+      "id": 17,
       "name": "Bird 03",
       "image": "images/bird03.jpg",
       "category": "Bird",
@@ -190,7 +188,7 @@
     {
       "id": 23,
       "name": "Deer 01",
-      "image": "images/deer01.jpg",
+      "image": "images/deer01.webp",
       "category": "Animal",
       "featured": false,
       "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
@@ -203,7 +201,6 @@
       "featured": false,
       "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     }
-    
   ],
   "comments": [
     {
@@ -429,6 +426,22 @@
       "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-19T09:05:32.269Z",
       "id": 27
+    },
+    {
+      "dishId": 0,
+      "author": "Hasib",
+      "rating": "",
+      "comment": "Beautiful",
+      "date": "2022-03-03T12:05:57.941Z",
+      "id": 28
+    },
+    {
+      "dishId": 0,
+      "author": "Mahim",
+      "rating": "",
+      "comment": "nice",
+      "date": "2022-03-03T12:07:23.475Z",
+      "id": 29
     }
   ],
   "feedback": [
@@ -505,7 +518,7 @@
       "agree": "",
       "contactType": "tel.",
       "messag": "",
-      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elitgit",
       "id": 8
     }
   ]

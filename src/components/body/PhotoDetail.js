@@ -8,20 +8,17 @@ const PhotoDetail = props => {
     return (
         <div>
             <Card style={{ marginTop: "10px" }}>
-                <CardImg top src={baseUrl + props.dish.image} alt={props.dish.name} />
+                <CardImg top src={baseUrl + props. photo.image} alt={props. photo.name} />
                 <CardBody style={{ textAlign: "left" }}>
-                    <CardTitle>{props.dish.name}</CardTitle>
+                    <CardTitle>{props. photo.name}</CardTitle>
                     <CardText>
-                        {props.dish.description}
-                    </CardText>
-                    <CardText>
-                        Price: {props.dish.price}/-
+                        {props. photo.description}
                     </CardText>
                     <hr />
                     <CardTitle tag="h4">Comments:</CardTitle>
                     <LoadComments comments={props.comments} commentIsLoading = {props.commentIsLoading}></LoadComments>
                     <hr />
-                    <CommentForm dishId={props.dish.id} addComment={props.addComment} />
+                    <CommentForm  photoId={props. photo.id} addComment={props.addComment} />
                 </CardBody>
             </Card>
         </div>

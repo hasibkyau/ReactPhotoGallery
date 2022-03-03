@@ -2,9 +2,9 @@ import * as actionTypes from './actionTypes';
 import axios from 'axios';
 import { baseUrl } from './baseUrl';
 
-export const addComment = (dishId, rating, author, comment) => dispatch => {
+export const addComment = (photoId, rating, author, comment) => dispatch => {
     const newComment = {
-        dishId: dishId,
+        photoId: photoId,
         author: author,
         rating: rating,
         comment: comment
@@ -38,25 +38,25 @@ export const fetchComments = () => dispatch => {
 }
 
 
-const loadDishes = dishes => ({
-    type: actionTypes.LOAD_DISHES,
-    payload: dishes
+const loadPhotos = photos => ({
+    type: actionTypes.LOAD_PHOTOS,
+    payload: photos
 })
 
-const dishesLoading = () => ({
-    type: actionTypes.DISHES_LOADING,
+const photosLoading = () => ({
+    type: actionTypes.PHOTOS_LOADING,
 })
 
-const dishesFailed = (errMess) => ({
-    type: actionTypes.DISHES_FAILED,
+const photosFailed = (errMess) => ({
+    type: actionTypes.PHOTOS_FAILED,
     payload: errMess
 })
 
-export const fetchDishes = () => dispatch => {
-        dispatch(dishesLoading());
+export const fetchPhotos = () => dispatch => {
+        dispatch(photosLoading());
 
-        axios.get(baseUrl + "dishes")
+        axios.get(baseUrl + "photos")
         .then(response => response.data)
-        .then(dishes => dispatch(loadDishes(dishes)))
-        .catch(error => dispatch(dishesFailed(error.message)))
+        .then(photos => dispatch(loadPhotos(photos)))
+        .catch(error => dispatch(photosFailed(error.message)))
 }

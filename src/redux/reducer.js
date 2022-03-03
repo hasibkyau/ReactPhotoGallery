@@ -3,31 +3,31 @@ import * as actionTypes from './actionTypes';
 import { createForms } from 'react-redux-form';
 import { InitialContactForm } from './form';
 
-const dishReducer = (dishState = {isLoading:false, dishes:[], errMess:null} ,action) => {
+const photoReducer = (photoState = {isLoading:false, photos:[], errMess:null} ,action) => {
     switch(action.type){
-        case actionTypes.DISHES_LOADING:
+        case actionTypes.PHOTOS_LOADING:
             return {
-                ...dishState,
+                ...photoState,
                 isLoading: true,
                 errMess: null,
-                dishes:[]
+                photos:[]
             }
-        case actionTypes.LOAD_DISHES:
+        case actionTypes.LOAD_PHOTOS:
             return{
-                ...dishState,
+                ...photoState,
                 isLoading:false,
                 errMess: null,
-                dishes: action.payload,
+                photos: action.payload,
             }
-        case actionTypes.DISHES_FAILED:
+        case actionTypes.PHOTOS_FAILED:
             return{
-                ...dishState,
+                ...photoState,
                 isLoading: false,
                 errMess: action.payload,
-                dishes:[]
+                photos:[]
             }
         default:
-            return dishState;
+            return photoState;
     }    
 }
 
@@ -59,7 +59,7 @@ const commentReducer = (commentState = {isLoading: true, comments: []}, action) 
 }
 
 export const Reducer = combineReducers({
-    dishes: dishReducer,
+    photos : photoReducer,
     comments: commentReducer,
     ...createForms({
         feedback: InitialContactForm

@@ -2,35 +2,35 @@ import React, { Component } from 'react';
 import Photo from './Photo';
 import { CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { connect } from 'react-redux';
-import { addComment, fetchDishes, fetchComments} from '../../redux/actionCreator';
+import { addComment, fetchPhotos, fetchComments} from '../../redux/actionCreator';
 import Loading from './Loading';
 import { Alert } from 'reactstrap';
 import PhotoDetail from './PhotoDetail';
 
 const mapStateToProps = state => {
     return {
-        dishes: state.dishes,
+        photos: state.photos,
         comments: state.comments
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
-        fetchDishes: () => dispatch(fetchDishes()),
+        addComment: (photoId, rating, author, comment) => dispatch(addComment(photoId, rating, author, comment)),
+        fetchPhotos: () => dispatch(fetchPhotos()),
         fetchComments: () => dispatch(fetchComments())
     }
 }
 
 class Photos extends Component {
     state = {
-        selectedDish: null,
+        selectedPhoto: null,
         modalOpen: false
     }
 
-    onDishSelect = dish => {
+    onPhotoSelect = photo => {
         this.setState({
-            selectedDish: dish,
+            selectedPhoto: photo,
             modalOpen: !this.state.modalOpen
         });
     }
@@ -42,42 +42,41 @@ class Photos extends Component {
     }
 
     componentDidMount() {
-       this.props.fetchDishes();
+       this.props.fetchPhotos();
        this.props.fetchComments();
     }
 
     render() {
         document.title = "Menu";
-        console.log("err",this.props);
-        if (this.props.dishes.isLoading) {
+        if (this.props.photos.isLoading) {
             return (
                 <Loading/>
             );
         }
 
-        else if (this.props.dishes.errMess != null) {
+        else if (this.props.photos.errMess != null) {
             return (
                 <Alert color='danger'>Error Loading</Alert>
             );
         }
         
         else {
-            const menu = this.props.dishes.dishes.map(item => {
+            const menu = this.props.photos.photos.map(item => {
                 return (
                     <Photo
-                        dish={item}
+                        photo={item}
                         key={item.id}
-                        DishSelect={() => this.onDishSelect(item)}
+                        PhotoSelect={() => this.onPhotoSelect(item)}
                     />
                 );
             })
 
-            let dishDetail = null;
-            if (this.state.selectedDish != null) {
-                const comments = this.props.comments.comments.filter(comment => comment.dishId === this.state.selectedDish.id
+            let photoDetail = null;
+            if (this.state.selectedPhoto != null) {
+                const comments = this.props.comments.comments.filter(comment => comment.photoId === this.state.selectedPhoto.id
                 )
-                dishDetail = <PhotoDetail
-                    dish={this.state.selectedDish}
+                photoDetail = <PhotoDetail
+                    photo={this.state.selectedPhoto}
                     comments={comments}
                     addComment={this.props.addComment}
                     commentsIsLoading = {this.props.isLoading} />
@@ -90,7 +89,7 @@ class Photos extends Component {
                         </div>
                         <Modal  style={{scrollable:"true"}} isOpen={this.state.modalOpen}>
                             <ModalBody>
-                                {dishDetail}
+                                {photoDetail}
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="secondary" onClick={this.toggleModal}>

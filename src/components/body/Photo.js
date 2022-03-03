@@ -7,22 +7,19 @@ const Photo = props => {
         <div className='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3'>
             <div>
             
-            <Card style={{ margin: "10px", cursor:"pointer" }}  onClick={props.DishSelect}
+            <Card style={{ margin: "10px", cursor:"pointer" }}  onClick={props.PhotoSelect}
                     >
                 <CardImg
                     width="100%"
-                    alt={props.dish.name}
-                    src={baseUrl + props.dish.image}
+                    alt={props.photo.name}
+                    src={baseUrl + props.photo.image}
                     style={{ opacity: "1" }}
                 />
                 <CardBody style={{ textAlign: "left" }}>
 
                     <span>
-                        {props.dish.name}
+                        {props.photo.name}
                     </span>
-                    <CardText>
-                        Price: {props.dish.price}/-
-                    </CardText>
                     </CardBody>
             </Card>
             </div>
