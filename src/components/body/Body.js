@@ -1,18 +1,16 @@
 import React from "react";
-import Menu from "./Menu";
-import Home from "./Home";
 import Contact from "./Contact";
-import About from "./About";
 import { Route, Routes } from "react-router-dom"
+import Home from "./Home/Home";
+import Photos from "./Photos";
 
-const Body = () =>{
-    return(
+const Body = () => {
+    return (
         <div>
             <Routes>
-                <Route path = "/" element = {<Home/>}/>
-                <Route path = "/menu" element={<Menu/>}/>
-                <Route path = "/contact" element={<Contact/>}/>
-                <Route path = "/about" element={<About/>}/>
+                <Route path="/" element={<Home />} />
+                <Route path="/menu" element={<Photos />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </div>
     );
