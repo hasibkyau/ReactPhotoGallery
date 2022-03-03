@@ -2,15 +2,17 @@ import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 import { CardImg, CardTitle } from "reactstrap";
 import '../css/banner.css'
+import bgImg from '../../../../assets/images/bg1.jpg';
+
 const AdvertiseSection = (props) => {
     return (
         <div>
 
-            <div className="container" style={{ backgroundColor: "none", textAlign: "left", paddingTop: "25px" }}>
+            <div className="flex" style={{ backgroundColor: "none", textAlign: "left", paddingTop: "25px" }}>
                 <div className="row">
 
                     <div className="col-6 col-sm-3 col-md-2" style={{ textAlign: "left", color: "tomato" }} >
-                        <img className="img-fluid" src={props.bgImg} />
+                        <img className="img-fluid" src={bgImg} />
                     </div>
 
                     <div className="col-6 col-sm-9 col-md-10">

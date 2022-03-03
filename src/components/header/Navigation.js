@@ -33,21 +33,7 @@ class Navigation extends Component {
                                 <NavItem>
                                     <Link to="/" className="nav-link" onClick={this.navToggle}>Home</Link>
                                 </NavItem>
-                                <NavItem>
-                                    <Link to="/menu" className="nav-link" onClick={this.navToggle}>Menu</Link>
-                                </NavItem>
-                                <NavItem>
-                                    <Link to="/about" className="nav-link" onClick={this.navToggle}>About</Link>
-                                </NavItem>
-                                <NavItem>
-                                    <Link to="/contact" className="nav-link" onClick={this.navToggle}>Contact</Link>
-                                </NavItem>
-                                <NavItem>
-                                    <Link to="/portfolio" className="nav-link" onClick={this.navToggle}>Portfolio</Link>
-                                </NavItem>
-                                <NavItem>
-                                    <Link to="/ninjatailor" className="nav-link" onClick={this.navToggle}>ninjaTailor</Link>
-                                </NavItem>
+                                
                             </Nav>
                         </Collapse>
                     </div>
