@@ -88,7 +88,7 @@ class Menu extends Component {
                         <div className='row justify-content-md-center"'>
                             {menu}
                         </div>
-                        <Modal style={{scrollable:"true"}} isOpen={this.state.modalOpen}>
+                        <Modal  style={{scrollable:"true"}} isOpen={this.state.modalOpen}>
                             <ModalBody>
                                 {dishDetail}
                             </ModalBody>

@@ -11,7 +11,7 @@
 
   .banner{
     /* background-image:linear-gradient(to right, rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),url('../../../../public/assets/images/bg1.jpg'); */
-    margin-top: 60px;
+    /* margin-top: 60px; */
     background-size:cover;
     min-height: 33vw;
     border: 3px solid tomato; 
