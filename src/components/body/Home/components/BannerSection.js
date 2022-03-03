@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/banner.css'
 import bgImg from '../../../../assets/images/bg0.jpg';
+
 const BannerSection = (props) => {
     return (
         <div>

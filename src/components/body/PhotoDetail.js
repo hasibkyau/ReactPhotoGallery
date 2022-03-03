@@ -4,7 +4,7 @@ import LoadComments from './LoadComments';
 import CommentForm from './CommentForm';
 import { baseUrl } from '../../redux/baseUrl';
 
-const DishDetail = props => {
+const PhotoDetail = props => {
     return (
         <div>
             <Card style={{ marginTop: "10px" }}>
@@ -28,4 +28,4 @@ const DishDetail = props => {
     );
 }
 
-export default DishDetail;
+export default PhotoDetail;

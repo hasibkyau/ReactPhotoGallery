@@ -1,249 +1,413 @@
 {
-  "dishes": [
+  "photos": [
     {
-      "id": 0,
-      "name": "Ginger Burger",
-      "image": "images/0burger.jpg",
-      "category": "meal",
-      "label": "Hot",
-      "price": "199",
-      "featured": true,
-      "description": "This chicken burger gets an Asian-flavor twist with ginger and garlic. It's topped off with a fabulous coleslaw. If you like, serve the coleslaw as a side for grilled items, like chicken breasts, fish fillets or chops"
+      "id": 0,    
+      "name": "Bee 02",
+      "image": "images/bee02.jpg",
+      "category": "Insect",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "      
     },
     {
       "id": 1,
-      "name": "BBQ Chicken Pizza",
-      "image": "images/1pizza.jpg",
-      "category": "meal",
+      "name": "Bee 01",
+      "image": "images/bee01.jpg",
+      "category": "Insect",
       "label": "",
-      "price": "9",
       "featured": false,
-      "description": "BBQ chicken pizza with tangy BBQ sauce, chicken, and red onion. Gouda cheese gives the homemade pizza the most delicious smoky flavor and cilantro adds a touch of freshness. My pizza dough recipe makes enough for two 12-inch pizzas, so you can freeze half for later. Its an easy thick-style pizza crust with unbeatable flavor."
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     },
     {
       "id": 2,
-      "name": "French Fries",
-      "image": "images/2fries.jpg",
-      "category": "appetizer",
-      "label": "New",
-      "price": "120",
-      "featured": false,
-      "description": "These are deep-fried, very thin, salted slices of potato that are usually served at room temperature. French fries have numerous variants, from thick-cut to shoestring, crinkle, curly and many other names."
-    },
+      "name": "Bear",
+      "image": "images/bear01.jpg",
+      "category": "Animal",
+      "featured": true,
+      "description": "This is a huge wild bear typycally found in jungle"
+      },
     {
       "id": 3,
-      "name": "Cheese Cake",
-      "image": "images/3cake.jpg",
-      "category": "dessert",
-      "label": "",
-      "price": "170",
+      "name": "Bee 03",
+      "image": "images/bee03.jpg",
+      "category": "Insect",
       "featured": false,
-      "description": "A delectable, semi-sweet New York Style Cheese Cake, with cracker crust and spiced with Indian cardamoms"
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 4,
+      "name": "Bird 01",
+      "image": "images/bird01.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 5,
+      "name": "Bird 02",
+      "image": "images/bird02.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 6,
+      
+      "name": "Spider 02",
+      "image": "images/spider02.jpg",
+      "category": "Insect",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 7,
+      "name": "Bird 04",
+      "image": "images/bird04.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 8,
+      "name": "Redpanda 01",
+      "image": "images/redpanda01.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 9,
+      "name": "Bird 06",
+      "image": "images/bird06.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 10,
+      "name": "Bird 07",
+      "image": "images/bird07.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 11,
+      "name": "Bird 08",
+      "image": "images/bird08.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 12,
+      "name": "Bird 09",
+      "image": "images/bird09.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 13,   
+      "name": "Bird 05",
+      "image": "images/bird05.jpg",
+      "category": "Bird",
+      "featured": false,
+      
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 14,
+      "name": "Redpanda 02",
+      "image": "images/redpanda02.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 15,
+      "name": "Elephant 01",
+      "image": "images/elephant01.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 16,
+      "name": "Spider 01",
+      "image": "images/spider01.jpg",
+      "category": "Insect",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 17, 
+      "name": "Bird 03",
+      "image": "images/bird03.jpg",
+      "category": "Bird",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 18,
+      "name": "Spider 03",
+      "image": "images/spider03.jpg",
+      "category": "Insect",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 19,
+      "name": "Squirrel 01",
+      "image": "images/squirrel01.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 20,
+      "name": "Squirrel 02",
+      "image": "images/squirrel02.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 21,
+      "name": "Lion 01",
+      "image": "images/lion01.jpg",
+      "category": "Predetor",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 22,
+      "name": "Lion 02",
+      "image": "images/lion02.jpg",
+      "category": "Predetor",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 23,
+      "name": "Deer 01",
+      "image": "images/deer01.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
+    },
+    {
+      "id": 24,
+      "name": "Dolphine 01",
+      "image": "images/dolphine01.jpg",
+      "category": "Animal",
+      "featured": false,
+      "description": "Duis at placerat massa, eu accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus blandit, sapien sit amet tincidunt bibendum, ex odio lacinia urna, nec maximus ex lacus id leo. Nam hendrerit iaculis maximus. Aliquam erat volutpat. Sed nec neque dictum felis fringilla eleifend. Nam sed pellentesque sem, eget finibus augue. "
     }
+    
   ],
   "comments": [
     {
-      "dishId": 0,
+      "photoId": 0,
       "id": 0,
-      "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
+      "rating": 3,
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Shanto",
       "date": "2018-10-16T17:57:28.556094Z"
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "id": 1,
       "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Karim",
       "date": "2017-09-05T17:57:28.556094Z"
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "id": 2,
       "rating": 3,
-      "comment": "Eat it, just eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Moinul",
       "date": "2019-02-13T17:57:28.556094Z"
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "id": 3,
       "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rahat",
       "date": "2017-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "id": 4,
       "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rony",
       "date": "2019-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "id": 5,
       "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Shanto",
       "date": "2018-10-16T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "id": 6,
       "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Karim",
       "date": "2017-09-05T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "id": 7,
       "rating": 3,
-      "comment": "Eat it, just eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Moinul",
       "date": "2019-02-13T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "id": 8,
       "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rahat",
       "date": "2017-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "id": 9,
       "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rony",
       "date": "2019-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 2,
+      "photoId": 2,
       "id": 10,
       "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Shanto",
       "date": "2018-10-16T17:57:28.556094Z"
     },
     {
-      "dishId": 2,
+      "photoId": 2,
       "id": 11,
       "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Karim",
       "date": "2017-09-05T17:57:28.556094Z"
     },
     {
-      "dishId": 2,
+      "photoId": 2,
       "id": 12,
       "rating": 3,
-      "comment": "Eat it, just eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Moinul",
       "date": "2019-02-13T17:57:28.556094Z"
     },
     {
-      "dishId": 2,
+      "photoId": 2,
       "id": 13,
       "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rahat",
       "date": "2017-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 2,
+      "photoId": 2,
       "id": 14,
       "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rony",
       "date": "2019-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 3,
+      "photoId": 3,
       "id": 15,
       "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Shanto",
       "date": "2018-10-16T17:57:28.556094Z"
     },
     {
-      "dishId": 3,
+      "photoId": 3,
       "id": 16,
       "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Karim",
       "date": "2017-09-05T17:57:28.556094Z"
     },
     {
-      "dishId": 3,
+      "photoId": 3,
       "id": 17,
       "rating": 3,
-      "comment": "Eat it, just eat it!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Moinul",
       "date": "2019-02-13T17:57:28.556094Z"
     },
     {
-      "dishId": 3,
+      "photoId": 3,
       "id": 18,
       "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rahat",
       "date": "2017-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 3,
+      "photoId": 3,
       "id": 19,
       "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "author": "Rony",
       "date": "2019-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "author": "Hasib",
       "rating": "5",
-      "comment": "Working\n",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-13T13:21:05.153Z",
       "id": 20
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "author": "Hasib",
       "rating": "3",
-      "comment": "sasassa",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-13T15:33:40.796Z",
       "id": 21
     },
     {
-      "dishId": 2,
+      "photoId": 2,
       "author": "Siam Ahmed",
       "rating": "",
-      "comment": "Vhua khabar. Akdom baje. Mama janle ban kore dibo ei product. ",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-14T15:07:40.425Z",
       "id": 22
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "author": "Tasnim ",
       "rating": "",
-      "comment": "I love you Hasib",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-14T19:44:02.499Z",
       "id": 23
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "author": "Hasib ",
       "rating": "",
-      "comment": "I love you too\n",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-14T19:44:36.539Z",
       "id": 24
     },
     {
-      "dishId": 1,
+      "photoId": 1,
       "author": "Rifat",
       "rating": "2",
       "comment": "nice",
@@ -251,18 +415,18 @@
       "id": 25
     },
     {
-      "dishId": 3,
+      "photoId": 3,
       "author": "Rifat",
       "rating": "",
-      "comment": "Balo",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-17T05:24:28.881Z",
       "id": 26
     },
     {
-      "dishId": 0,
+      "photoId": 0,
       "author": "Mokabber",
       "rating": "",
-      "comment": "this food is good",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "date": "2022-02-19T09:05:32.269Z",
       "id": 27
     }
@@ -275,7 +439,7 @@
       "email": "kenny_west@gmail.com",
       "agree": true,
       "contactType": "Email",
-      "message": "Satisfied with the restaurant",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "id": 2
     },
     {
@@ -286,7 +450,7 @@
       "agree": "",
       "contactType": "tel.",
       "messag": "",
-      "message": "Your Resturant is awesome",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "id": 3
     },
     {
@@ -341,7 +505,7 @@
       "agree": "",
       "contactType": "tel.",
       "messag": "",
-      "message": "fasfd",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "id": 8
     }
   ]
