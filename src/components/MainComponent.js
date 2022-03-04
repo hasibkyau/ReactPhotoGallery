@@ -2,16 +2,16 @@ import React from "react";
 import Header from "./header/Header";
 import Body from "./body/Body";
 import Contact from "./body/Contact";
-import { Routes, Route } from "react-router";
+import { Route, Switch } from "react-router-dom";
 
 const MainComponent = () =>{
     return(
         <div>
             <Header/>
-            <Routes>
-                <Route path="/" element={<Body/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-            </Routes>
+            <Switch>
+                <Route path="/" component ={Body}/>
+                <Route path="/contact" component ={Contact}/>
+            </Switch>
         </div>
     );
 }
