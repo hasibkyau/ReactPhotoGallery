@@ -9,9 +9,9 @@ const Body = () => {
     return (
         <div>
             <Switch>
-                <Route path="/" element={<Home />} />
-                <Route path="/menu" element={<Photos />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/" Component={Home} />
+                <Route path="/menu" Component={Photos} />
+                <Route path="/contact" Component={Contact} />
             </Switch>
         </div>
     );

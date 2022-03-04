@@ -42,10 +42,10 @@ class MainComponent extends Component {
                 <div>
                     <Header />
                     <Switch>
-                        <Route path="/logout" element={<Logout />} />
-                        <Route path="/" element={<Body />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/feedback" element={<Feedback />} />
+                        <Route path="/logout" Component={Logout} />
+                        <Route path="/" Component={Body} />
+                        <Route path="/contact" Component={Contact} />
+                        <Route path="/feedback" Component={Feedback} />
                         <Redirect to="/" />
                     </Switch>
                 </div>
@@ -56,13 +56,7 @@ class MainComponent extends Component {
                 <div className="container">
                 <Header />
                     {/* {routes} */}
-                    <Switch>
-                        <Route path="/logout" element={<Logout />} />
-                        <Route path="/" element={<Body />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/feedback" element={<Feedback />} />
-                        {/* <Redirect to="/" /> */}
-                    </Switch>
+                    
                 </div>
             </div>
         )
