@@ -10,3 +10,6 @@ export const PHOTOS_FAILED = 'PHOTOS_FAILED';
 export const ADD_FEEDBACK = 'ADD_FEEDBACK';
 export const LOAD_FEEDBACK = "LOAD_FEEDBACK";
 export const FEEDBACK_LOADING = 'FEEDBACK_LOADING';
+
+export const AUTH_SUCCESS = "AUTH_SUCCESS";
+export const AUTH_LOGOUT = "AUTH_LOGOUT";

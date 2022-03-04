@@ -40,6 +40,9 @@ class Navigation extends Component {
                                     <Link to="/feedback" className="nav-link">Feedback</Link>
                                 </NavItem>
                                 <NavItem>
+                                    <Link to="/login" className="nav-link">Login</Link>
+                                </NavItem>
+                                <NavItem>
                                     <Link to="/logout" className="nav-link">Logout</Link>
                                 </NavItem>
                             </Nav>
