@@ -1,8 +1,12 @@
 export const ADD_COMMENT = 'ADD_COMMENT';
-
 export const LOAD_COMMENTS = 'LOAD_COMMENTS';
 export const COMMENT_LOADING = 'COMMENT_LOADING';
 
 export const LOAD_PHOTOS = 'LOAD_PHOTOS';
 export const PHOTOS_LOADING = 'PHOTOS_LOADING';
 export const PHOTOS_FAILED = 'PHOTOS_FAILED';
+
+
+export const ADD_FEEDBACK = 'ADD_FEEDBACK';
+export const LOAD_FEEDBACK = "LOAD_FEEDBACK";
+export const FEEDBACK_LOADING = 'FEEDBACK_LOADING';

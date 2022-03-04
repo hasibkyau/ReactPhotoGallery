@@ -222,12 +222,35 @@
   ],
   "feedback": [
     {
-      "firstName": "Kenny",
-      "lastName": "West",
-      "telNum": "+8801988609090",
-      "email": "kenny_west@gmail.com",
-      "agree": true,
-      "contactType": "Email",
+      "firstname": "Hasibur",
+      "lastname": "Rahman",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "id": 0
+    },
+    {
+      "firstname": "Hasibur",
+      "lastname": "Rahman",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "id": 1
+    },
+    {
+      "firstname": "Hasibur",
+      "lastname": "Rahman",
+      "telnum": "01758975747",
+      "email": "hasibur.rahman.tri@gmail.com",
+      "agree": "",
+      "contactType": "tel.",
+      "messag": "",
       "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "id": 2
     },
@@ -274,6 +297,26 @@
       "messag": "",
       "message": "Nice app",
       "id": 6
+    },
+    {
+      "firstname": "Md.",
+      "lastname": "Rahman",
+      "telnum": 1758975747,
+      "email": "hasibkyau.cse@gmail.com",
+      "agree": false,
+      "contactType": "",
+      "message": "nice",
+      "id": 7
+    },
+    {
+      "firstname": "Naim",
+      "lastname": "Ahmed",
+      "telnum": 1758975747,
+      "email": "hasibkyau.cse@gmail.com",
+      "agree": false,
+      "contactType": "",
+      "message": "Nice website",
+      "id": 8
     }
   ]
 }

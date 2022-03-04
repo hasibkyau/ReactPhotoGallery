@@ -58,10 +58,34 @@ const commentReducer = (commentState = {isLoading: true, comments: []}, action) 
     }  
 }
 
+
+const feedbackReducer = (feedbackState = {isLoading: true, feedback: []}, action) => {
+    switch (action.type) {
+        case actionTypes.LOAD_FEEDBACK:
+            return {
+                ...feedbackState,
+                isLoading: false,
+                feedback: action.payload,
+            }
+
+        case actionTypes.FEEDBACK_LOADING:
+            return{
+                ...feedbackState,
+                isLoading: true,
+                feedback: []
+            }
+
+        default:
+            return feedbackState;
+    }  
+}
+
+
 export const Reducer = combineReducers({
     photos : photoReducer,
     comments: commentReducer,
     ...createForms({
         feedback: InitialContactForm
-    }) 
+    }) ,
+    feedback : feedbackReducer,
 });
