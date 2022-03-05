@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import BannerSection from "./components/BannerSection";
-import AdvertiseSection from "./components/AdvertiseSection";
-import PhotoSection from "./components/PhotoSection";
+import BannerSection from "./BannerSection";
+import AdvertiseSection from "./AdvertiseSection";
+import PhotoSection from "./PhotoSection";
 
 class Home extends Component {
     render() {
-        document.title = "Home";
         return (
             <div>
                 <BannerSection

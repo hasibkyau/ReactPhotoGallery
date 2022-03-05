@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
-import LoadComments from './LoadComments';
-import CommentForm from './CommentForm';
+import LoadComments from '../Comments/LoadComments';
+import CommentForm from '../Comments/CommentForm';
 import { baseUrl } from '../../redux/baseUrl';
 
 const PhotoDetail = props => {

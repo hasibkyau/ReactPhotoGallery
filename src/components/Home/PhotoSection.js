@@ -1,5 +1,5 @@
 import React from "react";
-import Photos from "../../Photos";
+import Photos from "../Photos/Photos";
 
 const PhotoSection = () => {
     document.title = "Home";

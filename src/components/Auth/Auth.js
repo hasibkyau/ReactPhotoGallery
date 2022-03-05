@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Formik } from 'formik';
-
+import { Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { auth } from '../../redux/authActionCreators';
 
@@ -12,7 +12,7 @@ const mapDispatchToProps = dispatch => {
 }
 class Auth extends Component {
     state = {
-        mode: "Sign Up"
+        mode: "Login"
     }
 
     switchModeHandler = () => {
@@ -64,17 +64,18 @@ class Auth extends Component {
                     }}
                 >
                     {({ values, handleChange, handleSubmit, errors }) => (
-                        <div style={{
+                        <div className='container col-12 col-lg-6' style={{
                             border: "1px grey solid",
                             padding: "15px",
                             borderRadius: "7px",
                         }}>
                             <button style={{
-                                width: "100%",
-                                backgroundColor: "#D70F64",
-                                color: "white",
-                            }} className="btn btn-lg" onClick={this.switchModeHandler}>Switch to {this.state.mode === "Sign Up" ? "Login" : "Sign Up"}</button>
-                            <br /><br />
+                                    width: "100%",
+                                    //backgroundColor: "#81B441",
+                                    color: "white",
+                                }} className="btn btn-primary" onClick={this.switchModeHandler}>{this.state.mode === "Sign Up" ? "Already have an account?" : "Create New Account ?"}</button>
+                                <br />
+                            <br />
                             <form onSubmit={handleSubmit}>
                                 <input
                                     name="email"
@@ -107,7 +108,9 @@ class Auth extends Component {
                                     <br />
                                 </div> : null}
 
-                                <button type="submit" className="btn btn-success">{this.state.mode === "Sign Up" ? "Sign Up" : "Login"}</button>
+                                <Button style={{ width: "100%" }} type="submit" className="btn btn-success">{this.state.mode === "Sign Up" ? "Sign Up" : "Login"}</Button>
+                                {this.state.mode === "Sign Up" ? <hr /> : <p>Forgot Password?</p>}
+                                
                             </form>
                         </div>)}
                 </Formik>

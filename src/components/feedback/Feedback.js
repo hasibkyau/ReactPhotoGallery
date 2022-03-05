@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { fetchFeedback } from '../../redux/actionCreator';
-import Loading from '../body/Loading';
+import Loading from '../Template/Loading';
 import { Alert } from 'reactstrap';
 import ShowFeedback from './ShowFeedback';
 
