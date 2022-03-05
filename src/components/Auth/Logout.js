@@ -14,6 +14,7 @@ class Logout extends Component {
     componentDidMount() {
         this.props.logout();
     }
+    
     render() {
         return (<Redirect to="/" />)
     }

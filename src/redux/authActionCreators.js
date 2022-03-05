@@ -36,6 +36,7 @@ export const auth = (email, password, mode) => dispatch => {
 }
 
 export const logout = () => {
+    console.log("logout");
     localStorage.removeItem('token');
     localStorage.removeItem('expirationTime');
     localStorage.removeItem('userId');

@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Nav, NavItem, NavbarToggler, Collapse, Navbar, NavbarBrand } from "reactstrap";
 import LOGO from "./LOGO";
+import { connect } from "react-redux";
+
+const mapStateToProps = state => {
+    return {
+        auth: state.auth,
+    }
+}
 
 class Navigation extends Component {
 
@@ -33,18 +40,27 @@ class Navigation extends Component {
                                 <NavItem>
                                     <Link to="/" className="nav-link">Home</Link>
                                 </NavItem>
+
                                 <NavItem>
                                     <Link to="/contact" className="nav-link">Contact</Link>
                                 </NavItem>
+
+                                {this.props.auth.userId === null ? 
+                                <NavItem>
+                                    <Link to="/login" className="nav-link">Login</Link>
+                                </NavItem> 
+                                : 
+                                <div>     
                                 <NavItem>
                                     <Link to="/feedback" className="nav-link">Feedback</Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link to="/login" className="nav-link">Login</Link>
-                                </NavItem>
-                                <NavItem>
                                     <Link to="/logout" className="nav-link">Logout</Link>
                                 </NavItem>
+                                </div>
+                                }
+
+
                             </Nav>
                         </Collapse>
                     </div>
@@ -58,4 +74,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default connect(mapStateToProps)(Navigation);

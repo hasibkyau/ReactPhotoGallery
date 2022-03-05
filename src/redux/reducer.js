@@ -3,27 +3,23 @@ import * as actionTypes from './actionTypes';
 import { createForms } from 'react-redux-form';
 import { InitialContactForm } from './form';
 
-const INITIAL_STATE = {
-    token: null,
-    userId: null,
-}
-
-export const authReducer = (state = INITIAL_STATE, action) => {
+export const authReducer = (authState = {token: null, userId: null}, action) => {
     switch (action.type) {
         case actionTypes.AUTH_SUCCESS:
+            console.log("reducer",action.payload);
             return {
-                ...state,
+                ...authState,
                 token: action.payload.token,
                 userId: action.payload.userId,
             }
         case actionTypes.AUTH_LOGOUT:
             return {
-                ...state,
+                ...authState,
                 token: null,
                 userId: null,
             }
         default:
-            return state;
+            return authState;
     }
 }
 
@@ -111,5 +107,6 @@ export const Reducer = combineReducers({
         feedback: InitialContactForm
     }),
     feedback: feedbackReducer,
-    auth: authReducer,
+    auth : authReducer
+
 });

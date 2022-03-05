@@ -12,8 +12,7 @@ import Logout from "./Auth/Logout";
 
 const mapStateToProps = state => {
     return {
-        token: state.token,
-        userId: state.userId,
+        auth: state.auth,
     }
 }
 const mapDispatchToProps = dispatch => {
@@ -30,7 +29,7 @@ class MainComponent extends Component {
     }
     render() {
         let routes = null;
-        if (this.props.token === undefined) {
+        if (this.props.auth.token === null) {
             routes = (
                 <Switch>
                     <Route path="/contact" exact component={Contact} />
@@ -45,7 +44,7 @@ class MainComponent extends Component {
                     <Switch>
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/feedback" exact component={Feedback} />
-                        <Route path="/login" component={Auth} />
+                        <Route path="/logout" component={Logout} />
                         <Home />
                     </Switch>
                 </div>
