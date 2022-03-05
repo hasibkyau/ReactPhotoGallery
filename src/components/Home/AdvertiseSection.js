@@ -1,8 +1,9 @@
 import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 import { CardImg, CardTitle } from "reactstrap";
-import '../css/banner.css'
-import bgImg from '../../../../assets/images/bg1.jpg';
+//import './css/banner.css'
+import './css/banner.css'
+import bgImg from '../../assets/images/bg1.jpg'
 
 const AdvertiseSection = (props) => {
     return (

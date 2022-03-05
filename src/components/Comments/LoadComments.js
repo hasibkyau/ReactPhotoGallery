@@ -1,6 +1,6 @@
 import React from 'react';
 import dateFormat from 'dateformat';
-import Loading from './Loading';
+import Loading from '../Template/Loading';
 
 const LoadComments = props => {
     if (props.commentIsLoading) {

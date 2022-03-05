@@ -6,7 +6,7 @@ import { InitialContactForm } from './form';
 export const authReducer = (authState = {token: null, userId: null}, action) => {
     switch (action.type) {
         case actionTypes.AUTH_SUCCESS:
-            console.log("reducer",action.payload);
+            //console.log("reducer",action.payload);
             return {
                 ...authState,
                 token: action.payload.token,

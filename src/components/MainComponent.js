@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Header from "./header/Header";
-import Body from "./body/Body";
-import Home from "./body/Home/Home";
-import Contact from "./body/Contact";
+import Home from "./Home/Home";
+import Contact from "./Contact/Contact";
 import Feedback from "./feedback/Feedback";
 import Auth from "./Auth/Auth";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { connect } from 'react-redux';
-import { authCheck } from '../redux/authActionCreators';
+import { auth, authCheck } from '../redux/authActionCreators';
 import Logout from "./Auth/Logout";
+import Photos from "./Photos/Photos";
 
 const mapStateToProps = state => {
     return {
@@ -25,27 +25,27 @@ const mapDispatchToProps = dispatch => {
 class MainComponent extends Component {
     componentDidMount() {
         this.props.authCheck();
-        console.log(this.props);
     }
     render() {
         let routes = null;
         if (this.props.auth.token === null) {
             routes = (
                 <Switch>
-                    <Route path="/contact" exact component={Contact} />
+                    <Route path="/contact" exact component={Auth} />
                     <Route path="/login" component={Auth} />
-                    <Home />
+                    <Route path="/photography" component = {Photos}/>
+                    <Route path = "/" component={Home} />
                 </Switch>
             )
         } else {
             routes = (
                 <div>
-                    <Header />
                     <Switch>
+                        <Route path="/photography" component = {Photos}/>   
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/feedback" exact component={Feedback} />
                         <Route path="/logout" component={Logout} />
-                        <Home />
+                        <Route path = "/" component={Home} />
                     </Switch>
                 </div>
             )
@@ -53,7 +53,7 @@ class MainComponent extends Component {
 
         return (
             <div>
-                <div className="container">
+                <div className="">
                     <Header />
                     {routes}
                 </div>
