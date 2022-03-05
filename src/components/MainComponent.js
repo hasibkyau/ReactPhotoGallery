@@ -35,7 +35,7 @@ class MainComponent extends Component {
                     <Route path="/contact" exact component={Contact} />
                     <Route path="/login" component={Auth} />
                     <Route path="/photography" component = {Photos}/>
-                    <Home />
+                    <Route path = "/" component={Home} />
                 </Switch>
             )
         } else {
@@ -43,10 +43,11 @@ class MainComponent extends Component {
                 <div>
                     <Header />
                     <Switch>
+                        <Route path="/photography" component = {Photos}/>   
                         <Route path="/contact" exact component={Contact} />
                         <Route path="/feedback" exact component={Feedback} />
                         <Route path="/logout" component={Logout} />
-                        <Home />
+                        <Route path = "/" component={Home} />
                     </Switch>
                 </div>
             )
