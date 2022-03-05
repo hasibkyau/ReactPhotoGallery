@@ -3,35 +3,55 @@ import * as actionTypes from './actionTypes';
 import { createForms } from 'react-redux-form';
 import { InitialContactForm } from './form';
 
-const photoReducer = (photoState = {isLoading:false, photos:[], errMess:null} ,action) => {
-    switch(action.type){
+export const authReducer = (authState = {token: null, userId: null}, action) => {
+    switch (action.type) {
+        case actionTypes.AUTH_SUCCESS:
+            console.log("reducer",action.payload);
+            return {
+                ...authState,
+                token: action.payload.token,
+                userId: action.payload.userId,
+            }
+        case actionTypes.AUTH_LOGOUT:
+            return {
+                ...authState,
+                token: null,
+                userId: null,
+            }
+        default:
+            return authState;
+    }
+}
+
+const photoReducer = (photoState = { isLoading: false, photos: [], errMess: null }, action) => {
+    switch (action.type) {
         case actionTypes.PHOTOS_LOADING:
             return {
                 ...photoState,
                 isLoading: true,
                 errMess: null,
-                photos:[]
+                photos: []
             }
         case actionTypes.LOAD_PHOTOS:
-            return{
+            return {
                 ...photoState,
-                isLoading:false,
+                isLoading: false,
                 errMess: null,
                 photos: action.payload,
             }
         case actionTypes.PHOTOS_FAILED:
-            return{
+            return {
                 ...photoState,
                 isLoading: false,
                 errMess: action.payload,
-                photos:[]
+                photos: []
             }
         default:
             return photoState;
-    }    
+    }
 }
 
-const commentReducer = (commentState = {isLoading: true, comments: []}, action) => {
+const commentReducer = (commentState = { isLoading: true, comments: [] }, action) => {
     switch (action.type) {
         case actionTypes.LOAD_COMMENTS:
             return {
@@ -41,7 +61,7 @@ const commentReducer = (commentState = {isLoading: true, comments: []}, action) 
             }
 
         case actionTypes.COMMENT_LOADING:
-            return{
+            return {
                 ...commentState,
                 isLoading: true,
                 comments: []
@@ -55,13 +75,38 @@ const commentReducer = (commentState = {isLoading: true, comments: []}, action) 
             }
         default:
             return commentState;
-    }  
+    }
+}
+
+
+const feedbackReducer = (feedbackState = { isLoading: true, feedback: [] }, action) => {
+    switch (action.type) {
+        case actionTypes.LOAD_FEEDBACK:
+            return {
+                ...feedbackState,
+                isLoading: false,
+                feedback: action.payload,
+            }
+
+        case actionTypes.FEEDBACK_LOADING:
+            return {
+                ...feedbackState,
+                isLoading: true,
+                feedback: []
+            }
+
+        default:
+            return feedbackState;
+    }
 }
 
 export const Reducer = combineReducers({
-    photos : photoReducer,
+    photos: photoReducer,
     comments: commentReducer,
     ...createForms({
         feedback: InitialContactForm
-    }) 
+    }),
+    feedback: feedbackReducer,
+    auth : authReducer
+
 });

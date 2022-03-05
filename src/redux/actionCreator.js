@@ -60,3 +60,24 @@ export const fetchPhotos = () => dispatch => {
         .then(photos => dispatch(loadPhotos(photos)))
         .catch(error => dispatch(photosFailed(error.message)))
 }
+
+
+
+
+const feedbackLoading = () =>({
+    type: actionTypes.FEEDBACK_LOADING
+})
+
+
+const loadFeedback = feedback => ({
+    type: actionTypes.LOAD_FEEDBACK,
+    payload: feedback,
+})
+
+
+export const fetchFeedback = () => dispatch => {
+    dispatch(feedbackLoading());
+    axios.get(baseUrl + 'feedback')
+    .then(response =>dispatch(loadFeedback(response.data)))
+    .then(feedback => console.log());
+}
