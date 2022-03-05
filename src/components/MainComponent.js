@@ -10,68 +10,59 @@ import { connect } from 'react-redux';
 import { authCheck } from '../redux/authActionCreators';
 import Logout from "./Auth/Logout";
 
-// const mapStateToProps = state => {
-//     return {
-//         token: state.token,
-//         userId: state.userId,
-//     }
-// }
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         authCheck: () => dispatch(authCheck()),
-//     }
-// }
+const mapStateToProps = state => {
+    return {
+        token: state.token,
+        userId: state.userId,
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        authCheck: () => dispatch(authCheck()),
+    }
+}
 
 
 class MainComponent extends Component {
-    // componentDidMount() {
-    //     this.props.authCheck();
-    //     console.log(this.props);
-    // }
+    componentDidMount() {
+        this.props.authCheck();
+        console.log(this.props);
+    }
     render() {
-        // let routes = null;
-        // if (this.props.token === null) {
-        //     routes = (
-        //         <Switch>
-        //             <Route path="/login" component={Auth} />
-        //             <Redirect to="/login" />
-        //         </Switch>
-        //     )
-        // } else {
-        //     routes = (
-        //         <div>
-        //             <Header />
-        //             <Switch>
-        //                 <Route path="/logout" Component={Logout} />
-        //                 <Route path="/" Component={Body} />
-        //                 <Route path="/contact" Component={Contact} />
-        //                 <Route path="/feedback" Component={Feedback} />
-        //                 <Redirect to="/" />
-        //             </Switch>
-        //         </div>
-        //     )
-        // }
+        let routes = null;
+        if (this.props.token === undefined) {
+            routes = (
+                <Switch>
+                    <Route path="/contact" exact component={Contact} />
+                    <Route path="/login" component={Auth} />
+                    <Home />
+                </Switch>
+            )
+        } else {
+            routes = (
+                <div>
+                    <Header />
+                    <Switch>
+                        <Route path="/contact" exact component={Contact} />
+                        <Route path="/feedback" exact component={Feedback} />
+                        <Route path="/login" component={Auth} />
+                        <Home />
+                    </Switch>
+                </div>
+            )
+        }
 
         return (
             <div>
                 <div className="container">
-                <Header />
-                {/* <Home/> */}
-                    {/* {routes} */}
-                    <Switch>
-                        
-                        <Route path="/logout" Component={Logout} />
-                        <Route path="/" Component={Home} />
-                        <Route path="/contact" Component={Contact} />
-                        <Route path="/feedback" Component={Feedback} />
-                        {/* <Redirect to="/" /> */}
-                    </Switch>     
+                    <Header />
+                    {routes}
                 </div>
             </div>
         )
     }
 }
 
-export default MainComponent;
+//export default MainComponent;
 
-//export default connect(mapStateToProps, mapDispatchToProps)(MainComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(MainComponent);

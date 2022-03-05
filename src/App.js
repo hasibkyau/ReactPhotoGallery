@@ -1,8 +1,8 @@
 import './App.css';
 import MainComponent from './components/MainComponent';
-import { BrowserRouter } from 'react-router-dom';
 import myStore from './redux/store';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   //console.log("App.js", myStore.getState());
