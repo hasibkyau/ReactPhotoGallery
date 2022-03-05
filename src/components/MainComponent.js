@@ -41,7 +41,6 @@ class MainComponent extends Component {
         } else {
             routes = (
                 <div>
-                    <Header />
                     <Switch>
                         <Route path="/photography" component = {Photos}/>   
                         <Route path="/contact" exact component={Contact} />
