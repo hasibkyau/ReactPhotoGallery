@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Header from "./header/Header";
-import Home from "./body/Home/Home";
-import Contact from "./body/Contact";
+import Home from "./Home/Home";
+import Contact from "./Contact/Contact";
 import Feedback from "./feedback/Feedback";
 import Auth from "./Auth/Auth";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { connect } from 'react-redux';
 import { authCheck } from '../redux/authActionCreators';
 import Logout from "./Auth/Logout";
+import Photos from "./Photos/Photos";
 
 const mapStateToProps = state => {
     return {
@@ -33,6 +34,7 @@ class MainComponent extends Component {
                 <Switch>
                     <Route path="/contact" exact component={Contact} />
                     <Route path="/login" component={Auth} />
+                    <Route path="/photography" component = {Photos}/>
                     <Home />
                 </Switch>
             )

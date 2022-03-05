@@ -3,7 +3,7 @@ import Photo from './Photo';
 import { CardColumns, Modal, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addComment, fetchPhotos, fetchComments} from '../../redux/actionCreator';
-import Loading from './Loading';
+import Loading from '../Template/Loading';
 import { Alert } from 'reactstrap';
 import PhotoDetail from './PhotoDetail';
 
@@ -85,6 +85,7 @@ class Photos extends Component {
                 <div className="container">
                     <div className="row">
                         <div className='row justify-content-md-center"'>
+                            
                             {menu}
                         </div>
                         <Modal  style={{scrollable:"true"}} isOpen={this.state.modalOpen}>

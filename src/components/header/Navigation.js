@@ -42,6 +42,10 @@ class Navigation extends Component {
                                 </NavItem>
 
                                 <NavItem>
+                                    <Link to="/photography" className="nav-link">PhotoGraphy</Link>
+                                </NavItem>
+
+                                <NavItem>
                                     <Link to="/contact" className="nav-link">Contact</Link>
                                 </NavItem>
 
