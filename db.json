@@ -220,18 +220,12 @@
       "date": "2017-09-05T17:57:28.556094Z"
     },
     {
-      "author": "Hasib",
+      "photoId": 0,
+      "author": "Rajib",
       "rating": "",
-      "comment": "Beautiful",
-      "date": "2022-03-05T05:42:57.225Z",
+      "comment": "Beautiful Bee",
+      "date": "2022-03-05T05:51:04.115Z",
       "id": 2
-    },
-    {
-      "author": "Rifat",
-      "rating": "",
-      "comment": "Nice",
-      "date": "2022-03-05T05:43:24.395Z",
-      "id": 3
     }
   ],
   "feedback": [
