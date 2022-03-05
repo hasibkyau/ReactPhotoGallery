@@ -55,7 +55,6 @@ class Photos extends Component {
     }
 
     render() {
-        document.title = "Menu";
         if (this.props.photos.isLoading) {
             return (
                 <Loading />
@@ -103,9 +102,10 @@ class Photos extends Component {
                     commentsIsLoading={this.props.isLoading} />
             }
             return (
+                <div>
                 <div className="container">
-                    <ButtonGroup aria-label="Basic example">
-                        <Label className='mr-2 pt-1'>Category :</Label>
+                    <ButtonGroup className='m-2' aria-label="Basic example">
+                        <Label className='mr-2 p-1 text-danger '>Category :</Label>
                         <Button onClick={(e) => {this.handleCategory(e, "all")}} variant="secondary">All</Button>
                         <Button onClick={(e) => {this.handleCategory(e, "Animal")}} variant="secondary">Animal</Button>
                         <Button onClick={(e) => {this.handleCategory(e, "Bird")}} variant="secondary">Bird</Button>
@@ -129,6 +129,7 @@ class Photos extends Component {
                             </ModalFooter>
                         </Modal>
                     </div>
+                </div>
                 </div>
             );
         }

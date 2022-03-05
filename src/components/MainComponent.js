@@ -6,7 +6,7 @@ import Feedback from "./feedback/Feedback";
 import Auth from "./Auth/Auth";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { connect } from 'react-redux';
-import { authCheck } from '../redux/authActionCreators';
+import { auth, authCheck } from '../redux/authActionCreators';
 import Logout from "./Auth/Logout";
 import Photos from "./Photos/Photos";
 
@@ -25,14 +25,13 @@ const mapDispatchToProps = dispatch => {
 class MainComponent extends Component {
     componentDidMount() {
         this.props.authCheck();
-        console.log(this.props);
     }
     render() {
         let routes = null;
         if (this.props.auth.token === null) {
             routes = (
                 <Switch>
-                    <Route path="/contact" exact component={Contact} />
+                    <Route path="/contact" exact component={Auth} />
                     <Route path="/login" component={Auth} />
                     <Route path="/photography" component = {Photos}/>
                     <Route path = "/" component={Home} />
@@ -54,7 +53,7 @@ class MainComponent extends Component {
 
         return (
             <div>
-                <div className="container">
+                <div className="">
                     <Header />
                     {routes}
                 </div>

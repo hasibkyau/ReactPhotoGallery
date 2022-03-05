@@ -47,7 +47,6 @@ class Category extends Component {
     }
 
     render() {
-        document.title = "Menu";
         if (this.props.photos.isLoading) {
             return (
                 <Loading/>
