@@ -1,17 +1,18 @@
 import React from "react";
 import Contact from "./Contact";
-import { Route, Routes } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import Home from "./Home/Home";
-import Photos from "./Photos";
+import Feedback from "../feedback/Feedback";
 
 const Body = () => {
     return (
         <div>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/menu" element={<Photos />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <Switch>
+                <Route path="/contact" exact component = {Contact}/>
+                <Route path="/feedback" exact component = {Feedback}/>
+                {/* <Home/> */}
+            </Switch>
+            
         </div>
     );
 }
