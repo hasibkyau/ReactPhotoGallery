@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "./header/Header";
-import Body from "./body/Body";
 import Home from "./body/Home/Home";
 import Contact from "./body/Contact";
 import Feedback from "./feedback/Feedback";
